@@ -13,17 +13,19 @@
 <body>
   <!-- Cover: the room is the entrance to Juli's story. -->
   <header class="cover" id="cover">
-    <img class="room-art" src="fotos/habitacion-juli.png" alt="Illustrated room with a large window, a desk and Mimi sleeping on the bed">
+    <img class="room-art" src="fotos/habitacion-juli-v2.png" alt="Illustrated room with a large window, a desk and Mimi sleeping on the bed">
     <div class="morning-light" aria-hidden="true"></div>
     <div class="dust" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="window-leaves" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="cover-copy" aria-hidden="true"><span>an open little book</span><h1>Who is Juli?</h1></div>
 
     <!-- Small hit areas are intentionally calm; they add life without turning the room into a game. -->
-    <button class="room-object laptop" type="button" data-note="Her ideas always have a place to land." aria-label="Laptop: Her ideas always have a place to land."></button>
-    <button class="room-object caps" type="button" data-note="A few favorite caps, always within reach." aria-label="Hanging caps"></button>
-    <button class="room-object mimi" type="button" data-note="Mimi, the one-eyed little guardian of the room." aria-label="Mimi, one-eyed cat"></button>
+    <button class="room-object laptop" type="button" data-scroll-to="chapter-three" data-note="La tecnología también forma parte de su historia." aria-label="Laptop: ir al capítulo Descubriendo quién era"></button>
+    <button class="room-object caps" type="button" data-scroll-to="chapter-two" data-note="Sus gorras guardan muchos caminos y cambios." aria-label="Gorras: ir al capítulo Cuando el mundo empezó a cambiar"></button>
+    <button class="room-object mimi" type="button" data-scroll-to="chapter-five" data-note="Mimi acompaña todas las pequeñas cosas que hacen a Juli." aria-label="Mimi: ir al capítulo Las pequeñas cosas"></button>
     <p class="object-note" role="status" aria-live="polite"></p>
     <button class="begin-button" type="button" data-scroll-to="chapter-one">Begin the story <span>↓</span></button>
+    <button class="resume-story" type="button" hidden>Continuar leyendo <span>↓</span></button>
   </header>
   <div class="story-fade" aria-hidden="true"></div>
 
@@ -46,7 +48,7 @@
 
       <div class="memory-spread memory-spread--first reveal">
         <div class="memory-copy">
-          <p class="chapter-kicker">22 de octubre de 2003</p>
+          <p class="chapter-kicker">Los primeros años</p>
           <p>Juli nació en una familia que la quiso desde el primer día. Sus papás cuentan que fue una niña profundamente curiosa: no le bastaba mirar las cosas, necesitaba entenderlas.</p>
           <p>Los juguetes, la tecnología, los animales y cualquier objeto que apareciera cerca podían convertirse en una pregunta. A veces desarmaba algo solo para descubrir qué había dentro. Y aunque no siempre podía armarlo de nuevo, papá aparecía para ayudarla.</p>
         </div>
@@ -55,15 +57,19 @@
 
       <div class="chapter-pause reveal"><span aria-hidden="true">❋</span><p>Todo podía ser un descubrimiento.</p></div>
 
+      <figure class="memory-photo photo-slot photo-slot--wide reveal"><div><span>Una tarde en familia</span><small>Espacio para fotografía</small></div></figure>
+
       <div class="memory-spread memory-spread--home reveal">
         <div class="home-illustration" aria-hidden="true"><span class="sunbeam"></span><span class="tiny-flower flower-one">✿</span><span class="tiny-flower flower-two">✿</span><span class="tiny-leaf leaf-one">⌇</span><span class="tiny-leaf leaf-two">⌇</span></div>
         <div class="memory-copy">
           <p class="chapter-kicker">Su hogar</p>
-          <h3>Si Juli pudiera describir su infancia con una palabra, sería hogar.</h3>
-          <p>Su lugar favorito siempre fue su familia. Le encantaba bailar con ellos, ir al zoológico, caminar por el bosque, hacer picnics y preparar sándwiches antes de salir.</p>
-          <p>Para Juli, los momentos sencillos eran los más importantes: caminar por el centro viendo fuegos artificiales, reír sin prisa y volver a casa juntos.</p>
+          <h3>Su familia siempre fue su lugar favorito.</h3>
+          <p>No porque hicieran cosas extraordinarias, sino porque hacían extraordinarios los momentos sencillos.</p>
+          <p>Preparar sándwiches antes de salir. Bailar en la sala. Caminar por el centro para ver los fuegos artificiales. Ir al bosque. Reír durante la comida.</p>
+          <p>Había felicidad en esas pequeñas costumbres. Y sin darse cuenta, ahí empezó a construir la forma en la que aprendería a amar toda su vida.</p>
         </div>
       </div>
+      <figure class="memory-photo photo-slot photo-slot--portrait reveal"><div><span>Un picnic, el bosque<br>o una tarde en familia</span><small>Espacio para fotografía de infancia</small></div></figure>
 
       <div class="memory-spread memory-spread--nature reveal">
         <div class="memory-copy">
@@ -77,49 +83,83 @@
 
       <div class="people-page reveal">
         <p class="chapter-kicker">Las personas que construyeron su infancia</p>
-        <h3>Una infancia hecha de compañía.</h3>
-        <p>Juli siempre estuvo muy unida a sus hermanos. Ale le enseñó muchas de las primeras cosas de la vida; Andrés le enseñó a imaginar, a inventar juegos y a convertir cualquier rincón en una aventura.</p>
-        <p>También guarda con muchísimo cariño a su tía Fátima, a su vecina que la cuidaba cuando era pequeña, a su maestra Amelia y a sus amigas Diana, Yamileth y Alan.</p>
+        <h3>Sus primeros compañeros de vida.</h3>
+        <p>Ale fue la primera persona a quien quiso parecerse. Con ella aprendió muchas cosas que para un niño parecen enormes.</p>
+        <p>Andrés, en cambio, le enseñó otra forma de crecer: con él descubrió que la imaginación podía convertir cualquier tarde aburrida en una aventura inolvidable.</p>
+        <p>Ellos fueron sus primeros compañeros de vida.</p>
       </div>
+      <figure class="memory-photo photo-slot photo-slot--wide reveal"><div><span>Hermanos, amigas<br>y las personas que construyeron su infancia</span><small>Espacio para fotografía de infancia</small></div></figure>
 
       <div class="memory-spread memory-spread--parents reveal">
         <figure class="memory-photo memory-photo--small"><img src="fotos/papamama.png" alt="Fotografía de Juli durante su infancia"><figcaption>Siempre acompañada</figcaption></figure>
         <div class="memory-copy">
           <p class="chapter-kicker">Mamá y papá</p>
-          <p>Mamá era el lugar seguro: quien la entendía, la cuidaba y le recordaba que siempre tenía un hogar. Papá fue su compañero de aventuras, quien jugaba con ella, la hacía reír y, después de correr durante horas, le daba pequeños masajes para que descansara.</p>
-          <p>Con el tiempo Juli entendió que esos gestos pequeños eran enormes demostraciones de amor.</p>
+          <p>Había dos personas que ocupaban un lugar imposible de reemplazar: mamá y papá.</p>
+          <p>Mamá era ese lugar donde todo volvía a sentirse bien. Papá era quien convertía cualquier juego en una historia. Después de correr durante horas, todavía encontraba tiempo para hacerle pequeños masajes antes de dormir.</p>
+          <p>Son recuerdos muy sencillos, pero son justamente esos recuerdos los que siguen viviendo en Juli muchos años después.</p>
         </div>
       </div>
+      <figure class="memory-photo photo-slot photo-slot--square reveal"><div><span>Mamá, papá<br>y un lugar seguro</span><small>Espacio para fotografía de infancia</small></div></figure>
 
-      <div class="chapter-closing reveal"><p>La infancia de Juli no estuvo llena de grandes lujos. Estuvo llena de momentos. Y esos momentos serían siempre el lugar al que regresaría para recordar quién era.</p><span>Fin del capítulo I</span></div>
+      <div class="chapter-closing reveal"><p>Y quizá, sin saberlo, la niña que perseguía burbujas en un jardín ya estaba construyendo a la mujer que un día seguiría haciendo preguntas. Solo que ahora las preguntas serían distintas.</p><span>Una página que siempre vuelve.</span></div>
     </section>
 
-    <section class="chapter chapter--growing reveal">
-      <div class="chapter-heading"><span>02</span><div><p>Creciendo</p><h2>Aprendiendo a<br>ocupar su espacio.</h2></div></div>
-      <div class="chapter-content chapter-content--reverse"><div class="chapter-copy"><p class="chapter-kicker">El entretiempo</p><p>Crecer es una colección de primeras veces: las primeras decisiones valientes, las primeras despedidas difíciles y los primeros momentos que te hacen sentir más tú. Juli aprendió a llevar ternura y fuerza en las mismas manos.</p><p class="soft-line">Volviéndose, poquito a poquito.</p></div><div class="photo-pair"><figure class="polaroid photo-real"><img src="fotos/recuerdos-juli.png" alt="Juli y una persona querida tomadas de la mano"><figcaption>momentos suaves</figcaption></figure><figure class="polaroid photo-real"><img src="fotos/recuerdos-juli.png" alt="Juli con gorra en un acuario"><figcaption>nuevas vistas</figcaption></figure></div></div>
+    <!-- Chapter II: change as a warm movement forward. -->
+    <section class="chapter chapter-narrative chapter--change" id="chapter-two">
+      <div class="chapter-heading reveal"><span>02</span><div><p>Capítulo II</p><h2>Cuando el mundo<br>empezó a cambiar.</h2></div></div>
+      <div class="memory-spread reveal"><div class="memory-copy"><p class="chapter-kicker">Cambiar también es crecer</p><p>La primaria trajo nuevos salones, despedidas de amigas y cambios de casa. Juli aprendió que llevarse el hogar en el corazón podía hacer que cualquier lugar se sintiera un poco más suyo.</p><p>Desde pequeña ayudaba a su familia, aprendía a cocinar y vendía comida con su tía. Cada cosa nueva le enseñaba que podía aportar algo importante.</p></div><figure class="memory-photo memory-photo--small"><img src="fotos/juli-bebe.png" alt="Una fotografía de Juli pequeña"><figcaption>Siempre aprendiendo</figcaption></figure></div>
+      <div class="chapter-pause reveal"><span aria-hidden="true">⌇</span><p>Guadalajara, Morelia, y los lugares que hicieron camino.</p></div>
+      <div class="memory-spread memory-spread--reverse reveal"><div class="change-illustration" aria-hidden="true"><span>⌇</span><span>✿</span><span>⌇</span></div><div class="memory-copy"><p>Ir y volver fue parte de su historia. No fue una despedida triste: fue la forma en que Juli entendió que crecer también significa abrirse a lo nuevo sin dejar de amar de dónde vienes.</p><p class="soft-line">Cada cambio dejó una semilla.</p></div></div>
+      <figure class="memory-photo photo-slot photo-slot--portrait reveal"><div><span>Una cocina, un viaje<br>o una nueva casa</span><small>Espacio para fotografía</small></div></figure>
     </section>
 
-    <section class="chapter chapter--self reveal">
-      <div class="chapter-heading"><span>03</span><div><p>Descubriéndose</p><h2>Todas las formas en que<br>ella es bellamente Juli.</h2></div></div>
-      <div class="chapter-content"><div class="identity-card"><span class="star">✦</span><p>corazón suave<br>mente brillante<br>valentía tranquila<br>risa fuerte</p><span class="star">✦</span></div><div class="chapter-copy"><p class="chapter-kicker">La persona que es</p><p>Está hecha de canciones conocidas, pensamientos nocturnos, lealtad suave y una curiosidad que mantiene la vida luminosa. Nota los detalles. Recuerda. Hace espacio para las personas que ama.</p><p class="soft-line">Y sigue descubriendo más.</p></div></div>
+    <!-- Chapter III: identity, interests and the first outline of her own voice. -->
+    <section class="chapter chapter-narrative chapter--identity" id="chapter-three">
+      <div class="chapter-heading reveal"><span>03</span><div><p>Capítulo III</p><h2>Descubriendo<br>quién era.</h2></div></div>
+      <div class="memory-spread reveal"><figure class="memory-photo"><img src="fotos/recuerdos-juli.png" alt="Juli durante su adolescencia"><figcaption>Una voz propia</figcaption></figure><div class="memory-copy"><p class="chapter-kicker">La identidad</p><p>La secundaria y la preparatoria en línea durante COVID fueron tiempos para escuchar más de cerca su propia voz. Entre la música de Billie Eilish, la cocina y la tecnología, Juli empezó a notar las cosas que encendían su curiosidad.</p><p>Aprendió programación, se hizo más independiente y comenzó a conocerse con honestidad: sus gustos, su orientación, sus preguntas y la persona que quería ser.</p></div></div>
+      <div class="identity-sky reveal" aria-hidden="true"><span class="moon">☾</span><span>✦</span><span>✦</span><span>✦</span></div>
+      <figure class="memory-photo photo-slot photo-slot--square reveal"><div><span>Una canción,<br>un código, un comienzo</span><small>Espacio para fotografía</small></div></figure>
+      <p class="chapter-whisper reveal">Conocerse también es darse permiso de cambiar.</p>
     </section>
 
-    <section class="chapter chapter--things reveal">
-      <div class="chapter-heading"><span>04</span><div><p>Pequeñas cosas</p><h2>Los objetos que<br>guardan un universo.</h2></div></div>
-      <div class="things-grid"><article><span>✦</span><h3>La luz de la mañana</h3><p>El verde del bosque por la ventana, un inicio lento y una respiración profunda.</p></article><article><span>⌁</span><h3>Peluches</h3><p>Compañías suaves, historias propias y un pedacito de hogar sobre la cama.</p></article><article><span>♫</span><h3>AirPods</h3><p>La música para caminar, trabajar y acompañar todos los momentos intermedios.</p></article><article class="mimi-card"><img src="fotos/mimi-real.png" alt="Mimi, gatita blanca con manchitas oscuras y un ojito"><div><span>♡</span><h3>Mimi</h3><p>Una pequeña compañera tuerta, dormida cerca y completamente en casa.</p></div></article></div>
+    <!-- Chapter IV: work, coffee and a more confident way of leading. -->
+    <section class="chapter chapter-narrative chapter--path" id="chapter-four">
+      <div class="chapter-heading reveal"><span>04</span><div><p>Capítulo IV</p><h2>Encontrando<br>su camino.</h2></div></div>
+      <div class="memory-spread memory-spread--reverse reveal"><div class="memory-copy"><p class="chapter-kicker">Aprender haciendo</p><p>El primer trabajo en Bubbles, las responsabilidades en Don Aquiles y la universidad fueron lugares donde Juli descubrió que podía guiar, aprender rápido y hacer que otras personas se sintieran capaces.</p><p>Estudiar Tecnologías de la Información le dio un lenguaje para la curiosidad que había tenido desde niña.</p></div><figure class="memory-photo memory-photo--small"><img src="fotos/referencias-juli.png" alt="Objetos personales de Juli"><figcaption>Pequeñas herramientas, grandes pasos</figcaption></figure></div>
+      <div class="coffee-note reveal"><span aria-hidden="true">☕</span><p>En Starbucks encontró el café, la paciencia de enseñar a otros y una nueva forma de crecer como líder.</p></div>
+      <figure class="memory-photo photo-slot photo-slot--wide reveal"><div><span>Un día de trabajo<br>que valga la pena recordar</span><small>Espacio para fotografía</small></div></figure>
     </section>
 
-    <section class="chapter chapter--love reveal">
-      <div class="chapter-heading"><span>05</span><div><p>Amor</p><h2>Las personas que<br>se sienten como hogar.</h2></div></div>
-      <div class="chapter-content"><figure class="love-frame photo-real"><img src="fotos/recuerdos-juli.png" alt="Juli con Jimena"><figcaption>con Jimena</figcaption></figure><div class="chapter-copy"><p class="chapter-kicker">Con Jimena</p><p>Hay amores que se sienten como ser vista en los momentos más pequeños: una mirada compartida, una broma privada, una mano que se encuentra sin pedirla. De esos que hacen brillar un poco más los días ordinarios.</p><p class="soft-line">Un nosotras, tranquilo y bonito.</p></div></div>
+    <!-- Chapter V: the small rituals that reveal Juli's essence. -->
+    <section class="chapter chapter-narrative chapter--essence" id="chapter-five">
+      <div class="chapter-heading reveal"><span>05</span><div><p>Capítulo V</p><h2>Las pequeñas cosas<br>que hacen a Juli.</h2></div></div>
+      <div class="essence-list reveal"><div><span>♡</span><p>Mimi, los osos y los actos de servicio.</p></div><div><span>♫</span><p>Billie Eilish, escribir y la música que acompaña.</p></div><div><span>⌇</span><p>Naturaleza, senderismo, sushi y té helado.</p></div><div><span>✦</span><p>Tecnología, gorras, café y la curiosidad de siempre.</p></div></div>
+      <div class="memory-spread memory-spread--mimi reveal"><figure class="memory-photo memory-photo--small"><img src="fotos/mimi-real.png" alt="Mimi, la gatita de Juli"><figcaption>Mimi, siempre cerca</figcaption></figure><div class="memory-copy"><p>No son solo gustos. Son pequeñas ventanas hacia la forma en que Juli cuida, observa, crea y encuentra belleza en los detalles cotidianos.</p><p class="soft-line">Toda una vida cabe en lo pequeño.</p></div></div>
+      <figure class="memory-photo photo-slot photo-slot--square reveal"><div><span>Un café, una montaña<br>o algo muy Juli</span><small>Espacio para fotografía</small></div></figure>
     </section>
 
-    <section class="chapter chapter--future reveal">
-      <div class="chapter-heading"><span>06</span><div><p>Sin dejar de convertirse</p><h2>Las mejores páginas<br>aún no están escritas.</h2></div></div>
-      <div class="future-copy"><p>No existe una versión final de una persona. Solo hay nuevas mañanas, nuevas habitaciones, nuevos sueños y el hermoso trabajo de volver a ser tú, una y otra vez.</p><span>Continuará, con amor.</span></div>
+    <!-- Chapter VI: a relationship that meets a person already becoming herself. -->
+    <section class="chapter chapter-narrative chapter--together" id="chapter-six">
+      <div class="chapter-heading reveal"><span>06</span><div><p>Capítulo VI</p><h2>Cuando apareció<br>alguien especial.</h2></div></div>
+      <div class="memory-spread reveal"><figure class="memory-photo"><img src="fotos/recuerdos-juli.png" alt="Juli y Jimena juntas"><figcaption>Con Jimena</figcaption></figure><div class="memory-copy"><p class="chapter-kicker">Un encuentro tranquilo</p><p>Cuando conoció a Jimena, Juli ya estaba construyendo una mejor versión de sí misma. Lo suyo no llegó a cambiar quién era, sino a acompañar lo que ya estaba floreciendo.</p><p>Entre tranquilidad, respeto y admiración, aprendieron juntas. Han ido construyendo una vida que se siente más consciente, más amable y más suya.</p><p class="soft-line">Crecer también puede ser hacerlo juntas.</p></div></div>
+      <figure class="memory-photo photo-slot photo-slot--portrait reveal"><div><span>Una aventura<br>compartida</span><small>Espacio para fotografía</small></div></figure>
+    </section>
+
+    <!-- Chapter VII deliberately remains open: the story continues. -->
+    <section class="chapter chapter-narrative chapter--continuing" id="chapter-seven">
+      <div class="chapter-heading reveal"><span>07</span><div><p>Capítulo VII</p><h2>La historia<br>continúa.</h2></div></div>
+      <div class="future-copy reveal"><p>Juli sigue cambiando, aprendiendo, imaginando y cuidando de las personas que ama. No hay una última página cuando una vida todavía está llena de lugares por descubrir.</p><span>Y lo más bonito es que aún hay mucho por contar.</span></div>
     </section>
   </main>
   <footer><span>Who is Juli?</span><button type="button" data-scroll-to="cover">Volver a la habitación ↑</button></footer>
+  <!-- Album: photographs open one at a time, like turning through memories. -->
+  <div class="photo-album" aria-hidden="true" role="dialog" aria-label="Álbum de recuerdos">
+    <button class="album-close" type="button" aria-label="Cerrar álbum">×</button>
+    <button class="album-arrow album-prev" type="button" aria-label="Fotografía anterior">←</button>
+    <figure><img src="" alt=""><figcaption></figcaption></figure>
+    <button class="album-arrow album-next" type="button" aria-label="Fotografía siguiente">→</button>
+    <p class="album-count" aria-live="polite"></p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
